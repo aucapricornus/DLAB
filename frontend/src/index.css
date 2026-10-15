@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: Poppins;
+    }
+}
+
+.input-form-contact {
+    @apply block w-full h-10 rounded-lg bg-ligth-blue px-4 py-0 text-black border-none font-normal focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 screen600:p-1 screen600:px-2 screen600:text-xs
+}
+
+.input-form-application {
+    @apply block w-full h-10 rounded-lg bg-ligth-blue px-4 py-0 text-black font-normal border-purple focus:border-none focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50
+}
+
+.input-form-error {
+    @apply block w-full h-10 rounded-lg bg-ligth-blue px-4 py-0 text-black font-normal border-b-red-600 border-b-2 focus:border-none focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 screen600:p-1 screen600:px-2 screen600:text-xs
+}
+
+.label-form-contact {
+    @apply block font-normal text-base screen600:text-xs screen1100:text-sm
+}
+
+.label-form-application {
+    @apply block text-purple text-lg
+}
+
+.checkbox-form-contact {
+    @apply h-7 w-7 rounded bg-ligth-blue text-bright-blue focus:border-white focus:ring focus:ring-offset-0 focus:ring-ligth-blue focus:ring-opacity-50 screen600:h-5 screen600:w-5
+
+}
+.checkbox-form-application {
+    @apply h-5 w-5 rounded bg-ligth-blue text-bright-blue border-purple focus:border-white focus:ring focus:ring-offset-0 focus:ring-bright-blue focus:ring-opacity-50 screen600:h-5 screen600:w-5
+}
+
+.checkbox-label-contact{
+    @apply text-base font-light text-white screen600:text-sm screen1100:text-base
+}
+
+.checkbox-label-application{
+    @apply text-base font-light text-ligth-gray screen600:text-sm screen1100:text-base
+}
+
+.radio-form {
+    @apply w-4 h-4 text-bright-blue bg-ligth-blue border-purple focus:ring-bright-blue focus:ring-2
+}
